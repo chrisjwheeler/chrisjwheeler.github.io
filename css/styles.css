@@ -1,6 +1,6 @@
 /* Add any additional custom styles here */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 .navbar {
@@ -17,4 +17,9 @@ img {
 
 footer {
     background-color: #f8f9fa;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
 }
