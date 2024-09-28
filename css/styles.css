@@ -1,0 +1,20 @@
+/* Add any additional custom styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
