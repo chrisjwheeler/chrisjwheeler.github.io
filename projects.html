@@ -26,43 +26,60 @@
 
     <!-- Page Content -->
     <div class="container mt-5">
-        <h1>Projects:</h1>
-        <div class="row">
-            <div class="col-md-12 mt-3 mb-4">
-                <h2>Conformal Prediction Research</h2>
-                <h5>About</h5>
-                <p>I continued researched alongside Dr. Henry Reeve on an area of statistics called conformal prediction. We tackled a specific branch of conformal prediction popularised by the paper arXiv:2106.00170 for uncertainty quantification on black-box time series models.</p>
-                <p>The following image demonstrates what the technique does:</p>
-                <img src="images/conformal_example.jpg" class="img-fluid mx-auto d-block mb-2 mt-2 " alt="Centered Image">
-                <p>Here we are comparing two different adaptive conformal prediction methods on stock data. We are most intrested in the coverage and the average prediction widths. Check out more images in the gallery.</p>
-                
-                <h5>My contribution</h5>
-                <p>I developed a variety of adaptations to the ACI method to improve its performance on distributions with certain characteristics. My favourite being a technique I named HACI where you use the observed volatility as a covariate for your interval prediction. This improved performance particularly on stock returns datasets. </p>
-                
-                <a href="#" class="btn btn-primary">Check out the repository</a>
+        <h2 class="text-center mb-5">Project carousel</h2>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Conformal Prediction Research</h2>
+                            <h5>About</h5>
+                            <p>I continued researched alongside Dr. Henry Reeve on an area of statistics called conformal prediction. We tackled a specific branch of conformal prediction popularised by the paper arXiv:2106.00170 for uncertainty quantification on black-box time series models.</p>
+                            <p>The following image demonstrates what the technique does:</p>
+                            <img src="images/conformal_example.jpg" class="img-fluid mx-auto d-block mb-2 mt-2" alt="Centered Image">
+                            <p>Here we are comparing two different adaptive conformal prediction methods on stock data. We are most interested in the coverage and the average prediction widths. Check out more images in the gallery.</p>
+                            <h5>My contribution</h5>
+                            <p>I developed a variety of adaptations to the ACI method to improve its performance on distributions with certain characteristics. My favourite being a technique I named HACI where you use the observed volatility as a covariate for your interval prediction. This improved performance particularly on stock returns datasets.</p>
+                            <a href="#" class="btn btn-primary">Check out the repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Multi-agent framework Demo</h2>
+                            <h5>About</h5>
+                            <p>During my internship at Projective Group I was tasked with creating a demo for multi agent LLM frameworks. I was told to research current papers. Identify a use case within the financial services industry and then create a working demo. I decided that anti money laundering (AML) and know your customer (KYC) would be a good service to implement multi-agents. This is because the workflow requires target web search, reasoning and knowledge of guidelines. I created an Agent framework which allowed an agent to delegate research and reasoning tasks to other agents which has access to the web and other tools. Watch the video below to see the framework in action.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uUwNGunfwGE?si=LVYzJGMVXUJCgd9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Research into how LLM's rank products.</h2>
+                            <h5>About</h5>
+                            <p>This is a personal research project and is not affiliated with anyone. I started this research as It has become apparent to me that chatbots are increasingly being used to recommend products. I personally often use chatbots to find restaurants or hotels. For this reason there will be demand for SEO within LLMs, what I am calling LLMEO.</p>
+                            <p>I believe there are two possible ways this could be achieved. Firstly, a method to target the RAG module, this is the more researched area. You essentially insert hidden text onto your product website begging the LLM to rank your product higher. This method has a fatal flaw which requires that you get into the top-n results on the search engine. No easy feat if your product is bad. Hence the second method I see happening is a data poisoning route where you try and get some of your malicious text into the models training data. This is the area which I am researching.</p>
+                            <p>My current research aims to answer the following questions:</p>
+                            <ul>
+                                <li>Do LLM’s have well defined ranks. I.e are they transitive?</li>
+                                <li>To what extent do meaningless changes in prompt change the observed rank?</li>
+                                <li>When asking for a list of products is this correlated to the LLM’s preference? I think it is.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 mt-4 mb-4">
-                <h2>Multi-agent framework Demo</h2>
-                <h5>About</h5>
-                <p>During my internship at Projective Group I was tasked with creating a demo for multi agent LLM frameworks. I was told to research current papers. Identify a use case within the financial services industry and then create a working demo. I decided that anti money laundering (AML) and know your customer (KYC) would be a good service to implement multi-agents. This is because the workflow requires target web search, reasoning and knowledge of guidelines. I created an Agent framework which allowed an agent to delegate research and reasoning tasks to other agents which has access to the web and other tools. Watch the video below to see the framework in action.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uUwNGunfwGE?si=LVYzJGMVXUJCgd9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="carousel-control-prev" href="#projectsCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
             </div>
-            <div class="col-md-12 mt-4 mb-4">
-                <h2>Research into how LLM's rank products.</h2>
-                <h5>About</h5>
-                <p>This is a personal research project and is not affiliated with anyone. I started this research as It has become apparent to me that chatbots are increasingly being used to recommend products. I personally often use chatbots to find restaurants or hotels. For this reason there will be demand for SEO within LLMs, what I am calling LLMEO.</p>
-                <p>I believe there are two possible ways this could be achieved. Firstly, a method to target the RAG module, this is the more researched area. You essentially insert hidden text onto your product website begging the LLM to rank your product higher. This method has a fatal flaw which requires that you get into the top-n results on the search engine. No easy feat if your product is bad. Hence the second method I see happening is a data poisoning route where you try and get some of your malicious text into the models training data. This is the area which I am researching. </p>
-                <p>My current research aims to answer the following questions:</p>
-                <ul>
-                    <li>Do LLM’s have well defined ranks. I.e are they transitive?</li>
-                    <li>To what extent do meaningless changes in prompt change the observed rank?</li>
-                    <li>When asking for a list of products is this correlated to the LLM’s preference? I think it is. </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="carousel-control-next" href="#projectsCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
             </div>
-        </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
